@@ -4,7 +4,8 @@ import Ordenacao.ArrayAleatorio;
 
 public class Bubble5000 {
     public static void main(String[] args) {
-        int [] array = ArrayAleatorio.gerar(5000);
+        int tam = 5000;
+        int [] array = ArrayAleatorio.gerar(tam);
 
         System.out.println("Array não ordenado:");
         for (int num : array) {
@@ -15,7 +16,7 @@ public class Bubble5000 {
 
         long start = System.currentTimeMillis();
 
-        int [] resultado = Bubblesort.sort(array);
+        int [] resultado = Bubblesort.sort(array, tam);
 
         System.out.println("Array ordenado:");
         for (int num : array) {

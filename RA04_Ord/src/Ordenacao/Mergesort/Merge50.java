@@ -3,7 +3,8 @@ import Ordenacao.ArrayAleatorio;
 
 public class Merge50 {
     public static void main(String[] args) {
-        int [] array = ArrayAleatorio.gerar(50);
+        int tam = 50;
+        int [] array = ArrayAleatorio.gerar(tam);
 
         System.out.println("Array não ordenado:");
         for (int num : array) {
@@ -12,7 +13,7 @@ public class Merge50 {
 
         long start = System.currentTimeMillis();
 
-        int [] resultado = Mergesort.sort(array);
+        int [] resultado = Mergesort.sort(array, tam);
 
         System.out.println();
 

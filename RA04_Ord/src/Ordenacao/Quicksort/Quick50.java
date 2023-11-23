@@ -3,7 +3,8 @@ import Ordenacao.ArrayAleatorio;
 
 public class Quick50 {
     public static void main(String[] args) {
-        int [] array = ArrayAleatorio.gerar(50);
+        int tam = 50;
+        int [] array = ArrayAleatorio.gerar(tam);
 
         System.out.println("Array não ordenado:");
         for (int num : array) {
@@ -14,7 +15,7 @@ public class Quick50 {
 
         long start = System.currentTimeMillis();
 
-        int [] resultado = Quicksort.sort(array, 0, array.length - 1);
+        int [] resultado = Quicksort.sort(array, 0, tam - 1);
 
         System.out.println("Array ordenado:");
         for (int num : array) {

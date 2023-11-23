@@ -4,7 +4,8 @@ import Ordenacao.ArrayAleatorio;
 
 public class Quick1000 {
     public static void main(String[] args) {
-        int [] array = ArrayAleatorio.gerar(1000);
+        int tam = 1000;
+        int [] array = ArrayAleatorio.gerar(tam);
 
         System.out.println("Array não ordenado:");
         for (int num : array) {
@@ -15,7 +16,7 @@ public class Quick1000 {
 
         long start = System.currentTimeMillis();
 
-        int [] resultado = Quicksort.sort(array, 0, array.length - 1);
+        int [] resultado = Quicksort.sort(array, 0, tam - 1);
 
         System.out.println("Array ordenado:");
         for (int num : array) {

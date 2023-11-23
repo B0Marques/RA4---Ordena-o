@@ -2,8 +2,8 @@ package Ordenacao.Mergesort;
 
 public class Mergesort {
 
-    public static int[] sort(int[] array) {
-        int n = array.length;
+    public static int[] sort(int[] array, int tam) {
+        int n = tam;
         int[] temp = new int[n];
         return sort(array, temp, 0, n - 1);
     }

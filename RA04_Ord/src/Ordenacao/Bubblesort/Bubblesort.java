@@ -2,8 +2,8 @@ package Ordenacao.Bubblesort;
 
 public class Bubblesort {
 
-    public static int[] sort(int[] array) {
-        int n = array.length;
+    public static int[] sort(int[] array, int tam) {
+        int n = tam;
         int trocas = 0;
         int iteracoes = 0;
         boolean troca;
